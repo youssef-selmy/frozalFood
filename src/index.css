@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    color: #3F3B39;
+    font-family: 'Kanit', sans-serif;
+}
+
+.swiper-pagination-bullet {
+    background-color: #000;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #6CBE43;
+    width: 20px;
+    border-radius: 10px;
+    transition-duration: 300ms;
+}
+
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .brouchers {
+        border: 1px solid #C6A868;
+        color: #C6A868;
+        /* Color change for mobile */
+    }
+
+    .myLink {
+        width: 100% !important;
+    }
+}
