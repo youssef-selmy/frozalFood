@@ -97,7 +97,7 @@ function Hero() {
 
       <div className="flex flex-col gap-5 sm:w-[450px] md:w-[480px] lg:w-[400px] xl:w-[550px]">
         <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-center lg:text-start">
-          Keep it Organic with <br />{" "}
+          Keep it natural  with <br />{" "}
           <span className="text-main-green">Frozal</span> Food
         </p>
 

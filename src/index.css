@@ -19,8 +19,18 @@ body {
     border-radius: 10px;
     transition-duration: 300ms;
 }
-
-
+/* New rule for hover effect on contact info */
+.contact-info:hover {
+    color: rgba(13, 147, 78, 0.975); 
+  }
+  .social-link:hover {
+    color:rgba(13, 147, 78, 0.975); 
+  }
+  
+  .text-hover-blue:hover {
+    color: rgba(13, 147, 78, 0.975);  
+  }
+  
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
@@ -33,4 +43,5 @@ body {
     .myLink {
         width: 100% !important;
     }
+    
 }

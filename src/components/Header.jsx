@@ -67,7 +67,10 @@ function Menu({ showMenu, setMenu }) {
               <SlScreenSmartphone size={22} />
               <p className='font-medium mt-2 lg:mt-0'>Call Us</p>
             </div>
-            <span>(+20) 120 444 0672</span>
+            <span>Office Phone:</span>
+          <span>(+20) 120 444 0672</span>
+          <span>Factory Phone:</span>
+          <span>(+20) 106 985 8582</span>
           </div>
 
           <div className='flex flex-col items-center lg:items-start lg:w-[170px]'>
@@ -119,33 +122,41 @@ function TopBanner() {
     <div className='bg-[#C6A868] w-full flex justify-center px-5'>
       <div className='w-[1050px] flex items-center justify-between text-white'>
 
-        <p className='text-[32px]'>Frozal Food</p>
+      <p className='text-[32px] text-hover-blue'>Frozal Food</p>
+
 
         <div className='flex gap-5 items-center'>
 
-          <div className='flex items-center gap-2 text-lg'>
-            <SlScreenSmartphone />
-            <p className='mb-'>(+20) 120 444 0672</p>
-          </div>
+        <div className='flex items-center gap-2 text-lg'>
+  <SlScreenSmartphone />
+  <p className='mb-'>
+    <span className="contact-info">(+20) 120 444 0672</span>
+    
+  </p>
+</div>
 
-          <div className='flex items-center gap-2 text-lg'>
-            <MdOutlineEmail />
-            <p className='mb-[3px]'>Info@frozal.com</p>
-          </div>
+<div className='flex items-center gap-2 text-lg'>
+  <MdOutlineEmail />
+  <p className='mb-[3px]'>
+    <span className="contact-info">Info@frozal.com</span>
+  </p>
+</div>
+
 
         </div>
 
         <div className='flex gap-5'>
-          <Link to='https://www.linkedin.com/company/frozal-food-company/' target='_blank' className='w-8 h-8 bg-white text-[#C6A868] flex justify-center items-center rounded-full'>
-            <FaLinkedinIn />
-          </Link>
-          <Link to='https://www.facebook.com/profile.php?id=61555688709817&mibextid=ZbWKwL' target='_blank' className='w-8 h-8 bg-white text-[#C6A868] flex justify-center items-center rounded-full'>
-            <FaFacebookF />
-          </Link>
-          <Link to='https://www.instagram.com/frozal_food?igsh=MXF2MGJucTlsZWZoNQ==' target='_blank' className='w-8 h-8 bg-white text-[#C6A868] flex justify-center items-center rounded-full'>
-            <FaInstagram />
-          </Link>
-        </div>
+  <Link to='https://www.linkedin.com/company/frozal-food-company/' target='_blank' className='w-8 h-8 bg-white text-[#C6A868] flex justify-center items-center rounded-full social-link'>
+    <FaLinkedinIn />
+  </Link>
+  <Link to='https://www.facebook.com/profile.php?id=61555688709817&mibextid=ZbWKwL' target='_blank' className='w-8 h-8 bg-white text-[#C6A868] flex justify-center items-center rounded-full social-link'>
+    <FaFacebookF />
+  </Link>
+  <Link to='https://www.instagram.com/frozal_food?igsh=MXF2MGJucTlsZWZoNQ==' target='_blank' className='w-8 h-8 bg-white text-[#C6A868] flex justify-center items-center rounded-full social-link'>
+    <FaInstagram />
+  </Link>
+</div>
+
 
       </div>
     </div>

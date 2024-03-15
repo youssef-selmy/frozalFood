@@ -42,7 +42,7 @@ function Intro() {
           <div className="flex flex-col items-center justify-center"></div>
         </div>
         <p className="text-center md:text-start md:w-[300px] lg:w-[400px] xl:w-[500px] md:text lg:text-lg xl:text-2xl">
-          Greetings! We are Frozal Food Company Producing and exporting frozen{" "}
+          Greetings! We are Frozal Company Producing and exporting frozen{" "}
           <span className="text-main-green font-semibold">Egyptian</span>{" "}
           agricultural products Worldwide, we are exporting to the World &
           European markets and targeting customers importing{" "}
@@ -85,7 +85,7 @@ function MAV() {
         <div className="text-center lg:text-start lg:pt-5">
           <h2 className="text-main-green font-medium text-2xl">Our Mission</h2>
           <p className="text-[#828282]">
-            Our mission provide organic and pesticide-free frozen vegetables and
+            Our mission provide natural and pesticide-free frozen vegetables and
             fruits, the production of frozen ready meals at the highest level of
             convenience, and provide any quantity as your needs with high
             standards of food safety & quality and our target is to be Frozal be
