@@ -122,7 +122,7 @@ function TopBanner() {
     <div className='bg-[#C6A868] w-full flex justify-center px-5'>
       <div className='w-[1050px] flex items-center justify-between text-white'>
 
-      <p className='text-[32px] text-hover-blue'>Frozal Food</p>
+      <p className='text-[32px] text-hover-blue'>Frozal</p>
 
 
         <div className='flex gap-5 items-center'>

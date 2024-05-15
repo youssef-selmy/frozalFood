@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-main-green relative text-white h-[1700px]  lg:h-[440px] flex flex-col justify-between">
+    <footer className="bg-main-green relative text-white h-[1750px]  lg:h-[440px] flex flex-col justify-between">
       <div className="flex justify-end w-full">
         <img src={logoIcon} alt="Logo Icon" />
       </div>
@@ -64,28 +64,29 @@ function Contact() {
         </div>
 
         <div className="flex gap-5">
-          <Link
-            to="https://www.linkedin.com/company/frozal-food-company/"
-            target="_blank"
-            className="w-8 h-8 bg-white text-main-green flex justify-center items-center rounded-full"
-          >
-            <FaLinkedinIn />
-          </Link>
-          <Link
-            to="https://www.facebook.com/profile.php?id=61555688709817&mibextid=ZbWKwL"
-            target="_blank"
-            className="w-8 h-8 bg-white text-main-green flex justify-center items-center rounded-full"
-          >
-            <FaFacebookF />
-          </Link>
-          <Link
-            to="https://www.instagram.com/frozal_food?igsh=MXF2MGJucTlsZWZoNQ=="
-            target="_blank"
-            className="w-8 h-8 bg-white text-main-green flex justify-center items-center rounded-full"
-          >
-            <FaInstagram />
-          </Link>
-        </div>
+  <Link
+    to="https://www.linkedin.com/company/frozal-food-company/"
+    target="_blank"
+    className="w-8 h-8 bg-white text-main-green flex justify-center items-center rounded-full hover:bg-main-green hover:text-white"
+  >
+    <FaLinkedinIn />
+  </Link>
+  <Link
+    to="https://www.facebook.com/profile.php?id=61555688709817&mibextid=ZbWKwL"
+    target="_blank"
+    className="w-8 h-8 bg-white text-main-green flex justify-center items-center rounded-full hover:bg-main-green hover:text-white"
+  >
+    <FaFacebookF />
+  </Link>
+  <Link
+    to="https://www.instagram.com/frozal_food?igsh=MXF2MGJucTlsZWZoNQ=="
+    target="_blank"
+    className="w-8 h-8 bg-white text-main-green flex justify-center items-center rounded-full hover:bg-main-green hover:text-white"
+  >
+    <FaInstagram />
+  </Link>
+</div>
+
       </div>
     </div>
   );

@@ -98,7 +98,7 @@ function Hero() {
       <div className="flex flex-col gap-5 sm:w-[450px] md:w-[480px] lg:w-[400px] xl:w-[550px]">
         <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-center lg:text-start">
           Keep it natural  with <br />{" "}
-          <span className="text-main-green">Frozal</span> Food
+          <span className="text-main-">Frozal</span> 
         </p>
 
         <p className="text-sm md:text-base lg:text-lg text-[#828282] text-center lg:text-start">
@@ -132,7 +132,7 @@ function Hero() {
             href={Brochure}
             target="_blank"
             className="brouchers py-2 w-full rounded-xl text-main-green border border-main-green text-center font-medium"
-            style={{ width: "100%" }}
+            style={{ width: "100%",color: "#C6A868",borderColor:"#C6A868" }}
           >
             Our Brochure
           </a>
@@ -168,12 +168,12 @@ function Specs() {
 function Cards() {
   return (
     <div className="flex flex-col items-center justify-center gap-5 lg:flex-row">
-      <Card className="flex flex-col gap-5 p-5 rounded-3xl max-w-[610px] lg:h-[800px]">
+      <Card className="flex flex-col gap-5 p-5 rounded-3xl max-w-[610px] lg:h-[900px]">
         <div className="max-h-[800px] overflow-hidden rounded-lg bg-gradient-to-b from-[#00000020] to-white">
           <img
             src={prods2}
             alt="Frozen fruit"
-            className="w-full h-full object-cover max-h-[500px]"
+            className="w-full h-full object-cover max-h-[600px]"
           />
         </div>
         <p className="text-center text-xl font-semibold">Frozen fruit</p>
@@ -187,12 +187,12 @@ function Cards() {
         </div>
       </Card>
 
-      <Card className="flex flex-col gap-5 p-5 rounded-3xl max-w-[610px] lg:h-[800px]">
+      <Card className="flex flex-col gap-5 p-5 rounded-3xl max-w-[610px] lg:h-[900px]">
         <div className="max-h-[800px] overflow-hidden rounded-lg bg-gradient-to-b from-[#00000020] to-white">
           <img
             src={prods3}
             alt="Frozen fruit"
-            className="w-full h-full object-cover max-h-[500px]"
+            className="w-full h-full object-cover max-h-[600px]"
           />
         </div>
         <p className="text-center text-xl font-semibold">Frozen vegetables</p>

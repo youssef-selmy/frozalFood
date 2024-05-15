@@ -30,6 +30,11 @@ body {
   .text-hover-blue:hover {
     color: rgba(13, 147, 78, 0.975);  
   }
+  .text-main- {
+    color: #C6A868;  
+  }
+ 
+  
   
 
 /* Media query for mobile devices */
