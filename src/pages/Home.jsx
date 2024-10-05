@@ -60,6 +60,13 @@ function Hero() {
       >
         <SwiperSlide>
           <img
+            src='https://res.cloudinary.com/dglkluhsv/image/upload/v1728123488/egch9xabhig2d9b4gcev.jpg'
+            alt="Hero"
+            className="w-[350px] sm:w-[420px] md:w-[450px] lg:w-[410px] xl:w-[500px]"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
             src={image1}
             alt="Hero"
             className="w-[350px] sm:w-[420px] md:w-[450px] lg:w-[410px] xl:w-[500px]"

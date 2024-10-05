@@ -61,6 +61,12 @@ export const events = [
         date: "12 - 14, Dec 2023",
         description: "We Attednded this event"
     },
+    {
+      image: "https://res.cloudinary.com/dglkluhsv/image/upload/v1727956416/sssx7wdhu7xexqzq2ddd.jpg",
+      title: "Sial Paris",
+      date: "19 - 23 October 2024",
+      description: "We Attednded this event"
+  },
 ]
 
 export const brandScroll = [mango, pomegranate, straw, pumpkin, frise, artichoke, carrot, cauli, greenPeans, greenPeas, mixedVeg, okra, proccoli];
