@@ -60,7 +60,14 @@ function Hero() {
       >
         <SwiperSlide>
           <img
-            src='https://res.cloudinary.com/dglkluhsv/image/upload/v1728123488/egch9xabhig2d9b4gcev.jpg'
+            src='https://res.cloudinary.com/dglkluhsv/image/upload/v1732786729/xmzmd52nwdtjga90zimf.jpg'
+            alt="Hero"
+            className="w-[350px] sm:w-[420px] md:w-[450px] lg:w-[410px] xl:w-[500px]"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src='https://res.cloudinary.com/dglkluhsv/image/upload/v1732786863/ajh6vjxewkbavmijzf7r.jpg'
             alt="Hero"
             className="w-[350px] sm:w-[420px] md:w-[450px] lg:w-[410px] xl:w-[500px]"
           />
