@@ -15,6 +15,16 @@ import BRC from "../assets/Certificate/BRC.svg";
 import Kosher from "../assets/Certificate/Kosher.svg";
 import Globalgap from "../assets/Certificate/Globalgap.svg";
 
+import Experience from "../assets/OurWorkIcons/Experience.svg"
+import Shipment from "../assets/OurWorkIcons/Shipment.svg"
+import Services from "../assets/OurWorkIcons/Services.svg"
+import years from "../assets/OurWorkIcons/years.svg"
+import Qualit from "../assets/OurWorkIcons/Quality.svg"
+import GMO from "../assets/OurWorkIcons/GMO.svg"
+import partnersMap from "../assets/ourPartner/map.svg"
+import desktopFlagsSvg from "../assets/ourPartner/country.svg"
+import mobileFlagsSvg from "../assets/ourPartner/mobile.svg"
+
 import image1 from "../assets/hero/image1.png";
 import image2 from "../assets/hero/image2.png";
 import image3 from "../assets/hero/image3.png";
@@ -36,6 +46,8 @@ const Home = () => {
   return (
     <Section className="flex flex-col gap-20">
       <Hero />
+      <OurWork />
+      <MapForPartners />
       <Specs />
       <Cards />
       <Quality />
@@ -155,6 +167,84 @@ function Hero() {
     </div>
   );
 }
+function OurWork() {
+  const pakeges = [
+    { num: "+10", text: "Experience years", icon: Experience },
+    { num: "+850", text: "Shipment", icon: Shipment },
+    { num: "24/7", text: "Services", icon: Services },
+    { num: "18000", text: "Tons/ years", icon: years },
+    { num: "100%", text: "Quality", icon: Qualit },
+    { num: "100%", text: "GMO Free", icon: GMO },
+  ];
+
+  return (
+    <div className="flex flex-col gap-5">
+      {/* Grid layout for cards */}
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+        {pakeges.map((ele, i) => (
+          <Card
+            key={i}
+            className="w-full h-[100px] text-center p-3 rounded-xl flex items-center gap-4 bg-white shadow-lg"
+          >
+            {/* Image */}
+            <img
+              className="w-[50px] lg:w-[70px] h-[50px] lg:h-[70px] object-contain mt-1 mb-1"
+              src={ele.icon}
+              alt="icon"
+            />
+            {/* Number and Text */}
+            <div className="flex flex-col items-start">
+              <p className="font-bold lg:text-xl mt-1 mb-1">{ele.num}</p>
+              <p className="text-[10px] lg:text-base font-medium text-[#828282] mt-1">
+                {ele.text}
+              </p>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </div>
+  );
+}
+function MapForPartners() {
+  return (
+    <div className="flex flex-col gap-5">
+      {/* Title */}
+      <h2 className="text-center font-medium text-3xl">Our Partners Worldwide</h2>
+
+      {/* Map Section */}
+      <div className="w-full p-4">
+        {/* Map Image */}
+        <img
+          className="w-full h-auto object-cover brightness-70 transition-all duration-1000"
+          src={partnersMap}
+          srcSet={`${partnersMap}-1x.jpg 1x, ${partnersMap}-2x.jpg 2x, ${partnersMap}-3x.jpg 3x`}
+          alt="Our Partners Map"
+        />
+        
+      
+        <div >
+          {/* Mobile  */}
+          <img
+            className="w-full h-auto object-cover brightness-70 transition-all duration-1000 sm:hidden"
+            src={mobileFlagsSvg}
+            alt="Partner Flags Mobile"
+          />
+
+          {/* Desktop  */}
+          <img
+            className="w-full h-auto object-cover brightness-70 transition-all duration-1000 hidden sm:block"
+            src={desktopFlagsSvg}
+            alt="Partner Flags Desktop"
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
+
 
 function Specs() {
   const info = [
@@ -309,6 +399,7 @@ function Packaging() {
     </div>
   );
 }
+
 
 function Certificates() {
   return (
